@@ -1,0 +1,15 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+analytics-event-analyser.iml
+misc.xml
+modules.xml
+.idea/
+vcs.xml
+.idea/inspectionProfiles/
+/inspectionProfiles/profiles_settings.xml
