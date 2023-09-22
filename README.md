@@ -19,7 +19,7 @@ python3 --version
 ```
 2. Clone this project into your machine 
 ```shell
-git clone 
+git clone git@github.com:prithvitewatia/analytics-event-analyser.git
 ```
 3. Separate this project from global python environment.
 This can be done by creating a virtual environment in the project
