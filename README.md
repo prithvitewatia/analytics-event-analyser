@@ -17,26 +17,35 @@ Check the installation by testing the following command
 ```shell
 python3 --version
 ```
-2. Clone this project into your machine 
+2. Install mitmproxy into your machine.
+```shell
+brew install mitmproxy
+```
+3. Add mitmproxy certificate.
+```shell
+sudo security add-trusted-cert -d -p ssl -p basic -k \
+ /Library/Keychains/System.keychain ~/.mitmproxy/mitmproxy-ca-cert.pem
+```
+4. Clone this project into your machine 
 ```shell
 git clone git@github.com:prithvitewatia/analytics-event-analyser.git
 ```
-3. Separate this project from global python environment.
+5. Separate this project from global python environment.
 This can be done by creating a virtual environment in the project
 directory.
 ```shell
 python3 -m venv venv
 ```
-4. Start the virtual environment by the following command in the project
+6. Start the virtual environment by the following command in the project
 directory for macOS.
 ```shell
-source myvenv/bin/activate
+source venv/bin/activate
 ```
-5. Install the dependencies by using the following command
+7. Install the dependencies by using the following command
 ```shell
 pip3 install -r requirements.txt
 ```
-6. Shutdown the virtual environment after completion by using
+8. Shutdown the virtual environment after completion by using
 ```shell
 deactivate
 ```

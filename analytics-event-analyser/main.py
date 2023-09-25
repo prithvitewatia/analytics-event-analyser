@@ -72,7 +72,7 @@ if __name__ == '__main__':
     # sudo security add-trusted-cert -d -p ssl -p basic -k /Library/Keychains/System.keychain \
     # ~/.mitmproxy/mitmproxy-ca-cert.pem
     # However, we can later use a custom CA certificate
-    chrome_options.add_argument(f'--proxy-server={proxy}')
+    chrome_options.add_argument(f' --proxy-server={proxy}')
     # Options are configured to use proxy server and service is used to get manage chrome driver
     browser = webdriver.Chrome(options=chrome_options, service=ChromeService(ChromeDriverManager().install()))
     loop = asyncio.get_event_loop()
